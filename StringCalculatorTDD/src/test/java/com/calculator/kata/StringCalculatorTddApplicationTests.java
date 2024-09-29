@@ -20,4 +20,11 @@ class StringCalculatorTddApplicationTests {
 		
 		assertThat(StringCalculator.calculateSum("5")).isEqualTo("5");
 	}
+	
+	
+	@Test
+	public void sumOfNumbersSeparatedByCommaShouldBeReturned() {
+		
+		assertThat(StringCalculator.calculateSum("1,2,3")).isEqualTo("6");
+	}
 }
